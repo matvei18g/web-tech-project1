@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вейккауслига</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Чемпионат Финляндии по футболу - 2025</h1>
+        <nav>
+            <a href="https://www.veikkausliiga.com/"  title="Открыть официальный сайт Veikkausliiga">
+            <img src="../images/Veikkausliigan_logo.png"  style="height:40px; vertical-align:right;">
+        </a>  
+             <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="tickets.html" class="active">Билеты</a></li>
+                <li><a href="passport.html">Паспорт болельщика</a></li>
+                <li><a href="table.html">Таблица</a></li>
+                <li><a href="task.html">Решение алгоритмической задачи</a></li>
+                <li><a href="https://www.veikkausliiga.com/">Официальный сайт</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <h2>Билеты</h2>
+        <p>Билеты можно приобрести на официальном сайте каждой команды. На этой странице вы можете найти их.</p>
+        <h2>Поиск сайта команды</h2>
+
+        <form action="https://www.google.com/search" method="get">
+        <label for="query">Введите название команды:</label><br>
+        <input type="text" id="query" name="q" placeholder="Название команды" required style="margin-top: 10px;">
+        <button type="submit">Отправить</button>
+        </form>
+
+            <h2>Оставьте свои данные, и мы поможем купить билет</h2>
+    <div id="contacts">
+        <form class="form" action='https://www.google.ru/?hl=ru' method="get" target="_blank">
+            <div class="form-row">
+                <label for="surname">Фамилия</label>
+                <input type="text" id="surname" name="surname" value="Иванов" required>
+            </div>
+
+            <div class="form-row">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name"  value="Иван" required>
+            </div>
+
+            <div class="form-row">
+                <label for="lastname">Отчество</label>
+                <input type="text" id="lastname" name="lastname" value="Иванович" required>
+            </div>
+
+            <div class="form-row">
+                <label for="group">Номер группы</label>
+                <input type="number" id="group" name="group" value="1">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" value="ivan@gmail.com" required>
+            </div>
+            <div class="form-row">
+                <label for="date">Дата отправки</label>
+                <input type="date" id="date" name="date" value="2025-11-12">
+            </div>  
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+
+
+    <div class="popular">   
+    <h2>Популярные команды</h2>
+    <ul>
+        <li><a href="https://fcinter.fi/" target="_blank">Интер Турку</a>
+        <ul>Веритас Стадиум</ul>
+        </li>
+
+        <li><a href="https://ilvesedustus.fi/" target="_blank">Ильвес Тампере</a>
+            <ul>Таммелан Стадиум</ul></li>
+        <li><a href="https://hjk.fi/" target="_blank">ХИК Хельсинки</a><ul>Болт-Арена</ul></li>
+        <li><a href="https://kups.fi/"target="_blank">КуПС Куопио</a><ul>Вяре-Арена</ul></li>
+        <li><a href="https://sikfotboll.fi/" target="_blank">СИК Сейнайоки</a><ul>ОмаСП</ul></li>
+    </ul>
+    </div>
+    </main>
+
+    <footer>
+        <p>Матвей Гук - 2025</p>
+    </footer>
+
+</body>
+</html>
