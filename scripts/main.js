@@ -17,3 +17,4 @@ btn.addEventListener('click', () => {
         result.textContent = 'Число равно нулю';
     }
 });
+

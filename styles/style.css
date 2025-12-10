@@ -1,3 +1,29 @@
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    #contacts {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .stadium-grid {
+        gap: 15px;
+    }
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,6 +38,15 @@ header {
     padding: 10px 20px;
 }
 
+#contacts {
+    width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+}
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -20,18 +55,20 @@ nav ul {
     gap: 20px;
 }
 
+nav a.active {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 3px solid #007BFF;
+}
+
 nav a {
     color: #E0FFFF;
     text-decoration: none;
 }
 
 nav a.active {
-    color: red;
+    color: rgb(0, 45, 158);
     font-weight: bold;
-}
-
-main {
-    padding: 20px;
 }
 
 footer {
@@ -43,10 +80,9 @@ nav img {
     margin-right: 15px;
     vertical-align: right;
 }
-main img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
+main img, .stadium-card img {
+    max-width: 100%;
+    height: auto;
 }
 
 input[type="text"] {
@@ -78,14 +114,6 @@ button {
     transition: color 0.3s;
 }
 
-#contacts {
-    width: 300px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #f0f8ff;
-    border: 2px solid #007BFF;
-    border-radius: 10px;
-}
 
 .form-row {
     display: flex;
@@ -101,3 +129,49 @@ button {
     border-radius: 5px;
     width: 100%; 
     box-sizing: border-box}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#stadiums {
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stadium-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.stadium-card {
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    transition: transform .2s ease;
+}
+
+.stadium-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.stadium-card h3 {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: 1.1em;
+}
+
+.stadium-card p {
+    margin: 0;
+    color: #444;
+}
